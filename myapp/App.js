@@ -3,7 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Home from './components/Home';
 import ContactUs from './components/Contact';
-//import AboutUs from './components/AboutUs';
+import AboutUs from './components/AboutUs';
 
 const Stack = createNativeStackNavigator();
 export default function App() {
@@ -19,7 +19,7 @@ export default function App() {
         >
           <Stack.Screen name='home' component={Home} options={{ title: "Welcome" }} />
           <Stack.Screen name='contact' component={ContactUs} options={{ title: "Contact Us" }} />
-          {/* <Stack.Screen name='aboutus' component={AboutUs} options={{ title: "About Us" }} /> */}
+          <Stack.Screen name='aboutus' component={AboutUs} options={{ title: "About Us" }} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
